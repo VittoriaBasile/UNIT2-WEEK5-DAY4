@@ -12,26 +12,33 @@ body{
 .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    
     justify-content: center;
     position: relative;
     margin-block: 6rem;
     font-family: 'Indie Flower', cursive;
-    row-gap: 4rem;
+    row-gap: 3rem;
 }
 
 .postit{
-width: 230px;
-height: 130px;
+width: 200px;
+height: 100px;
 padding: 2rem 1rem;
 box-shadow: 6px 6px 3px rgba(11, 11, 11, 0.25);
 position: relative;
+transition: width, height, box-shadow 0.5s;
+}
 
+.postit:hover{
+   width: 235px ;
+   height: 135px;
+   box-shadow: 12px 12px 12px rgba(10, 10, 10, 0.658);
 }
 
 .giallo{
    background-color: #f8f8c6; 
    background: linear-gradient(to bottom , #f8f8c6 70%, #adad8d);
+   
 }
 
 .verde{
@@ -45,20 +52,21 @@ position: relative;
 
 .task{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
     inset: 3rem;
 }
 
 .passaggi{
     position: absolute;
-    inset: 6.5rem 2rem 1rem 2.8rem;
-    font-size: 30px;
+    inset: 6rem 2rem 1rem 2.8rem;
+    font-size: 25px;
 }
 
 .uno{
     transform-origin: bottom left;
     transform: rotateZ(355deg);
+    margin-right: 1rem;
 }
 
 .due{
@@ -69,17 +77,60 @@ position: relative;
 .tre{
     transform-origin: bottom left;
     transform: rotateZ(353deg);
-    margin-left: 3.2rem;
+    margin-left: 3.5rem;
     
 }
 .quattro{
     transform-origin: bottom right;
     transform: rotateZ(10deg);
-    margin-right: 1rem;
+    margin-right: 0.2rem;
 }
 
 .cinque{
     transform-origin: bottom left;
     transform: rotateZ(355deg);
-    
+    margin-right: 4rem;
+}
+
+.sei{
+    transform-origin: bottom left;
+    transform: rotateZ(350deg);
+    margin-right: 2rem;
+}
+
+.sette{
+    transform-origin: bottom left;
+    transform: rotateZ(355deg);
+    margin-right: 2rem;
+}
+
+.otto{
+    transform-origin: bottom right;
+    transform: rotateZ(3deg);
+}
+
+.uno:hover{
+    transform: rotateZ(0deg);
+
+}
+.due:hover{
+    transform: rotateZ(0deg);
+}
+.tre:hover{
+    transform: rotateZ(0deg);
+}
+.quattro:hover{
+    transform: rotateZ(0deg);
+}
+.cinque:hover{
+    transform: rotateZ(0deg);
+}
+.sei:hover{
+    transform: rotateZ(0deg);
+}
+.sette:hover{
+    transform: rotateZ(0deg);
+}
+.otto:hover{
+    transform: rotateZ(0deg);
 }
