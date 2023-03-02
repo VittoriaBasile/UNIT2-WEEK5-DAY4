@@ -1,12 +1,11 @@
-body{
+
+
+.lavagna{
     background-color: #616161;
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-.lavagna{
-
+    height: 600px;
 }
 
 .container{
@@ -134,3 +133,4 @@ transition: width, height, box-shadow 0.5s;
 .otto:hover{
     transform: rotateZ(0deg);
 }
+
